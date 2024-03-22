@@ -1,6 +1,5 @@
 #! /usr/bin/env node
 import inquirer from "inquirer";
-(async()=>{
 let number = Math.floor(Math.random() * 10) + 1;
 while (true) {
     const guessedNumber = await inquirer.prompt([{
@@ -21,5 +20,4 @@ while (true) {
     else {
         console.log("TOO HIGH!!!");
     }
-}
-})();
+};
